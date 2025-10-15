@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'item_model.dart';
 
 class ViewsTask extends StatelessWidget {
+  const ViewsTask({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

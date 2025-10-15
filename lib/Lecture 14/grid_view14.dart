@@ -16,6 +16,8 @@ class GridView14 extends StatelessWidget {
 
 
   ];
+
+  GridView14({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,19 +54,33 @@ class GridView14 extends StatelessWidget {
 }
 
 Widget Box(String text){
-  return Container(
-    color: Colors.amber,
-    width: 150,
-    height: 150,
-    child: Text(text,
-    style: TextStyle(
-      fontSize: 25,
-      
-      
-
-
+  return Padding(
+    padding: const EdgeInsets.all(8.0),
+    child: Container(
+      color: Colors.amber,
+      width: 150,
+      height: 150,
+      child: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            
+            Text(text,
+        style: TextStyle(
+          fontSize: 20,
+          
+          
+            
+            
+        ),
+        ),
+            
+          ],
+        ),
+      )
     ),
-    ),
-
   );
 }
